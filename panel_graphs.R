@@ -97,7 +97,7 @@ panel3 <- panelview(1 ~ pass,
 cairo_pdf(file = 'pass.pdf', width = 10, height = 12)
 panel3 + theme_minimal() + 
   scale_fill_discrete(name = "Система пропусков", 
-                      labels = c("Пропуск в данных", "Нет ограничений","Действуют ограничения")) +
+                      labels = c("Пропуск в данных","Действуют ограничения", "Нет ограничений")) +
   theme(legend.position = "bottom") + 
   ggtitle('') +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) 
@@ -154,7 +154,7 @@ panel6 <- panelview(1 ~ pass,
 cairo_pdf(file = 'pass1.pdf', width = 10, height = 12)
 panel6 + theme_minimal() + 
   scale_fill_discrete(name = "Система пропусков", 
-                      labels = c("Пропуск в данных", "Нет ограничений","Действуют ограничения")) +
+                      labels = c("Пропуск в данных","Действуют ограничения", "Нет ограничений")) +
   theme(legend.position = "bottom") + 
   ggtitle('') +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) 
