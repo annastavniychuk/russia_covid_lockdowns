@@ -20,9 +20,10 @@ The repository contains datasets on restrictive measures in Russia during the co
 
 pass1.csv
   ├── column level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
-  │   depending on the epidemiological situation in the region. The data was [collected](https://github.com/go95/covid_labor) from an interactive map from the official Internet resource 
-  │   for informing the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, 
-  │   the map shows statistics on new cases of coronavirus detection in the regions. 
+  │   depending on the epidemiological situation in the region. 
+  │   The data was collected (https://github.com/go95/covid_labor) from an interactive map from the official resource for informing
+  │   the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, the map
+  │   shows statistics on new cases of coronavirus detection in the regions. 
   │   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
   │   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
   └── column pass -- 
