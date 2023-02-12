@@ -2,23 +2,29 @@
 
 The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. Datasets collected by the authors for the article "Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions" (in Russian).
 
-There are 3 datasets in the `data` folder:
+├── code
+│   └── panel_graphs.R -- script merge datasets from the data folder, pre-processes and makes graphics for the figures folder
+├── data
+│   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- Yandex self-isolation index (day-city)
+│   ├── pass1.csv -- regional restrictive measures (lockdowns)
+│   └── city.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
+└── figures
+    ├── pass.pdf -- 
+    ├── pass1.pdf -- 
+    ├── stopcovid.pdf -- 
+    ├── stopcovid1.pdf -- 
+    ├── yandex.pdf -- 
+    └── yandex1.pdf -- 
 
-- `pass1.csv` -- 
-- `Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv` -- 
-- `city.csv` -- 
-
-There are 6 figures in the `figures` folder:
-
--
--
--
--
--
--
-
-In the **code** folder there is a script `panel_graphs.R` that merges data sets from the `data` folder, does pre-processing and draws graphs from the **figures** folder.
-
+pass1.csv
+  ├── column level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
+  │   depending on the epidemiological situation in the region. The data was [collected](https://github.com/go95/covid_labor) from an interactive map from the official Internet resource 
+  │   for informing the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, 
+  │   the map shows statistics on new cases of coronavirus detection in the regions. 
+  │   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
+  │   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
+  └── column pass -- 
+  
 
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
 
