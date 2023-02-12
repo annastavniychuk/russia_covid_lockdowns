@@ -11,8 +11,8 @@ library('ggplot2')
 
 # Подготовка данных
 {
-data <- read.csv("Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv", sep=";")
-city <- read.csv("city.csv")
+data <- read.csv("../data/Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv", sep=";")
+city <- read.csv("../data/city.csv")
 
 data <- data[,-1]
 city <- city[,c(6,10)]
@@ -41,7 +41,7 @@ data_week <- data_week %>% mutate(yandex = case_when(index < 2.5 ~ 0,
                                                 index >= 3.6 & index < 4 ~ 3,
                                                 index >= 4 & index <= 5 ~ 4))
 
-pass1 <- read.csv("pass1.csv", sep=";")
+pass1 <- read.csv("../data/pass1.csv", sep=";")
 pass1$week <- as.Date(pass1$week, format = "%Y-%m-%d")
 colnames(pass1)[4] <- 'stopcovid'
 
@@ -51,6 +51,8 @@ data2 <- merge(data1, pass1, by = c('week', 'region'))
 }
 
 # Графики на полных данных
+
+setwd('../figures')
 
 ## Яндекс индекс самоизоляции
 
