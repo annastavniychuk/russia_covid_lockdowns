@@ -2,6 +2,8 @@
 
 The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. Datasets collected by the authors for the article "Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions" (in Russian).
 
+``` bash
+
 ├── code
 │   └── panel_graphs.R -- script merge datasets from the data folder, pre-processes and makes graphics for the figures folder
 ├── data
@@ -24,7 +26,7 @@ pass1.csv
   │   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
   │   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
   └── column pass -- 
-  
+  ```
 
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
 
