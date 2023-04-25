@@ -10,6 +10,8 @@ The repository contains datasets on restrictive measures in Russia during the co
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
 │   ├── pass1.csv -- regional restrictive measures (lockdowns) (week-region)
+│   ├── Пропускной режим и самоизоляция 2020.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
+│   │   (collected from regional news sites and Garant materials)
 │   └── city.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview graphs
     ├── pass.pdf 
@@ -44,6 +46,8 @@ pass1.csv
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
 │   ├── pass1.csv -- региональные ограничительные меры (разбивка неделя-регион)
+│   ├── Пропускной режим и самоизоляция 2020.xlsx -- данные о сроках введения и отмены электронных пропусков в регионах России 
+│   │   (собраны из региональных новостных сайтов  и  материалов компании "Гарант")
 │   └── city.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
 │       мерждить файлы pass.csv и Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview графики 
