@@ -7,6 +7,7 @@ library('dplyr')
 # install.packages('panelView')
 library('panelView')
 library('ggplot2')
+library('stringi')
 }
 
 # Подготовка данных
@@ -62,7 +63,7 @@ panel1 <- panelview(1 ~ yandex,
           xlab = "Неделя", 
           ylab = "Регион") 
 
-cairo_pdf(file = 'yandex.pdf', width = 10, height = 12)
+cairo_pdf(file = 'yandex_v1903.pdf', width = 16, height = 10)
 panel1 + theme_minimal() +
   scale_fill_discrete(name = "Индекс самоизоляции",
                       labels = c("Очень много людей","Много людей", "Есть люди", "Большинство дома", "Почти никого")) +
@@ -79,7 +80,7 @@ panel2 <- panelview(1 ~ stopcovid,
                     xlab = "Неделя", 
                     ylab = "Регион") 
 
-cairo_pdf(file = 'stopcovid.pdf', width = 10, height = 12)
+cairo_pdf(file = 'stopcovid_v1903.pdf', width = 16, height = 10)
 panel2 + theme_minimal() + 
   scale_fill_discrete(name = "Стопкороновирус",
                       labels = c('0 этап', '1 этап', '2 этап', '3 этап')) +
@@ -96,10 +97,81 @@ panel3 <- panelview(1 ~ pass,
                     xlab = "Неделя", 
                     ylab = "Регион") 
 
-cairo_pdf(file = 'pass.pdf', width = 10, height = 12)
+cairo_pdf(file = 'pass_v1903.pdf', width = 16, height = 10)
 panel3 + theme_minimal() + 
   scale_fill_discrete(name = "Система пропусков", 
                       labels = c("Пропуск в данных","Действуют ограничения", "Нет ограничений")) +
+  theme(legend.position = "bottom") + 
+  ggtitle('') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) 
+dev.off()
+
+## Динамика итогового показателя
+
+data3 <- data2 %>% group_by(week) %>%  summarise(unemp = sum(unemployed))
+data3$week <- as.Date(data3$week,  format = "%Y-%m-%d")
+data3$week <- as.character(data3$week)
+
+cairo_pdf(file = 'unemployed_v1903.pdf', width = 16, height = 10)
+ggplot(data3, aes(x=week, y=unemp, group=1)) + 
+  geom_line() +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  xlab("Неделя") + ylab('Число зарегистрированных безработных')
+dev.off()
+
+cairo_pdf(file = 'unemployed_en_v1903.pdf', width = 16, height = 10)
+ggplot(data3, aes(x=week, y=unemp, group=1)) + 
+  geom_line() +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  xlab("Week") + ylab('Number of registered unemployed')
+dev.off()
+
+## Все графики на английском
+
+data2$region_en <- stri_trans_general(data2$region, "russian-latin/bgn")
+
+panel1_en <- panelview(1 ~ yandex, 
+                       data = data2, 
+                       index = c("region_en","week"), 
+                       xlab = "Week", 
+                       ylab = "Region") 
+
+cairo_pdf(file = 'yandex_en_v1903.pdf', width = 16, height = 10)
+panel1_en + theme_minimal() +
+  scale_fill_discrete(name = "Yandex Self Isolation Index",
+                      labels = c("A lot of people","Many people", "There are people", "Most at home", "Almost no one")) +
+  theme(legend.position = "bottom") +
+  ggtitle('') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+dev.off()
+
+panel2_en <- panelview(1 ~ stopcovid, 
+                       data = data2, 
+                       index = c("region_en","week"), 
+                       xlab = "Week", 
+                       ylab = "Region") 
+
+cairo_pdf(file = 'stopcovid_en_v1903.pdf', width = 16, height = 10)
+panel2_en + theme_minimal() + 
+  scale_fill_discrete(name = "Stopcoronavirus",
+                      labels = c('0 stage', '1 stage', '2 stage', '3 stage')) +
+  theme(legend.position = "bottom") + 
+  ggtitle('') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+dev.off()
+
+panel3_en <- panelview(1 ~ pass, 
+                       data = data2, 
+                       index = c("region_en","week"), 
+                       xlab = "Week", 
+                       ylab = "Region") 
+
+cairo_pdf(file = 'pass_en_v1903.pdf', width = 16, height = 10)
+panel3_en + theme_minimal() + 
+  scale_fill_discrete(name = "Pass system", 
+                      labels = c("Gap in the data","Restrictions apply", "No restrictions")) +
   theme(legend.position = "bottom") + 
   ggtitle('') +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) 
@@ -119,7 +191,7 @@ panel4 <- panelview(1 ~ yandex,
                     xlab = "Неделя", 
                     ylab = "Регион") 
 
-cairo_pdf(file = 'yandex1.pdf', width = 10, height = 12)
+cairo_pdf(file = 'yandex1_v1903.pdf', width = 10, height = 12)
 panel4 + theme_minimal() +
   scale_fill_discrete(name = "Индекс самоизоляции",
                       labels = c("Очень много людей","Много людей", "Есть люди", "Большинство дома", "Почти никого")) +
@@ -136,7 +208,7 @@ panel5 <- panelview(1 ~ stopcovid,
                     xlab = "Неделя", 
                     ylab = "Регион") 
 
-cairo_pdf(file = 'stopcovid1.pdf', width = 10, height = 12)
+cairo_pdf(file = 'stopcovid1_v1903.pdf', width = 10, height = 12)
 panel5 + theme_minimal() + 
   scale_fill_discrete(name = "Стопкороновирус",
                       labels = c('0 этап', '1 этап', '2 этап', '3 этап')) +
@@ -153,7 +225,7 @@ panel6 <- panelview(1 ~ pass,
                     xlab = "Неделя", 
                     ylab = "Регион") 
 
-cairo_pdf(file = 'pass1.pdf', width = 10, height = 12)
+cairo_pdf(file = 'pass1_v1903.pdf', width = 10, height = 12)
 panel6 + theme_minimal() + 
   scale_fill_discrete(name = "Система пропусков", 
                       labels = c("Пропуск в данных","Действуют ограничения", "Нет ограничений")) +
