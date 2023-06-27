@@ -1,6 +1,11 @@
 # Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions
 
-The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. Datasets collected by the authors for the article "Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions".
+The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. 
+Datasets collected by the authors for the article "The effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia".
+
+For citation:
+Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445
+
 
 ``` 
 ├── code
@@ -37,6 +42,9 @@ pass1.csv
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
 
 Репозиторий содержит наборы данных об ограничительных мерах в России во время пандемии коронавируса. Наборы данных, собранные авторами для статьи «Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России».
+
+Для цитирования: 
+Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445
 
 ``` 
 ├── code
