@@ -1,6 +1,11 @@
 # Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions
 
-The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. Datasets collected by the authors for the article "Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions" (in Russian).
+The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. 
+Datasets collected by the authors for the article "The effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia".
+
+For citation:
+Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445
+
 
 ``` 
 ├── code
@@ -10,6 +15,8 @@ The repository contains datasets on restrictive measures in Russia during the co
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
 │   ├── pass1.csv -- regional restrictive measures (lockdowns) (week-region)
+│   ├── Пропускной режим и самоизоляция 2020.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
+│   │   (collected from regional news sites and Garant materials)
 │   └── city.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview graphs
     ├── pass.pdf 
@@ -36,6 +43,9 @@ pass1.csv
 
 Репозиторий содержит наборы данных об ограничительных мерах в России во время пандемии коронавируса. Наборы данных, собранные авторами для статьи «Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России».
 
+Для цитирования: 
+Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445
+
 ``` 
 ├── code
 │   └── panel_graphs.R -- скрипт, который мёрджит наборы данных из папки data, предварительно их обрабатывает и строит графики для папки figures
@@ -44,6 +54,8 @@ pass1.csv
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
 │   ├── pass1.csv -- региональные ограничительные меры (разбивка неделя-регион)
+│   ├── Пропускной режим и самоизоляция 2020.xlsx -- данные о сроках введения и отмены электронных пропусков в регионах России 
+│   │   (собраны из региональных новостных сайтов  и  материалов компании "Гарант")
 │   └── city.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
 │       мерждить файлы pass.csv и Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview графики 
