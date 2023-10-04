@@ -14,7 +14,7 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 
 ``` 
 ├── code
-│   └── panel_graphs.R -- script merge datasets from the data folder, pre-processes and makes graphics for the figures folder
+│   └── panel_graphs.R -- script merges datasets from the data folder, pre-processes and makes graphics for the figures folder
 ├── data
 │   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- Yandex self-isolation index (day-city)
 │   │   https://yandex.ru/company/researches/2020/podomam
