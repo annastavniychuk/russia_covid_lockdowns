@@ -16,11 +16,11 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 ├── code
 │   └── panel_graphs.R -- script merges datasets from the data folder, pre-processes and makes graphics for the figures folder
 ├── data
-│   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- Yandex self-isolation index (day-city)
+│   ├── self_isolation_data.csv -- Yandex self-isolation index (day-city)
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
 │   ├── pass_data.csv -- regional restrictive measures (lockdowns) (week-region)
-│   ├── Пропускной режим и самоизоляция 2020.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
+│   ├── electronic_pass_regime_data.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
 │   │   (collected from regional news sites and Garant materials)
 │   └── city_dictionary.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview graphs
@@ -61,11 +61,11 @@ pass_data.csv
 ├── code
 │   └── panel_graphs.R -- скрипт, который мёрджит наборы данных из папки data, предварительно их обрабатывает и строит графики для папки figures
 ├── data
-│   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- индекс самоизоляции Яндекса (разбивка день-город) 
+│   ├── self_isolation_data.csv -- индекс самоизоляции Яндекса (разбивка день-город) 
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
 │   ├── pass_data.csv -- региональные ограничительные меры (разбивка неделя-регион)
-│   ├── Пропускной режим и самоизоляция 2020.xlsx -- данные о сроках введения и отмены электронных пропусков в регионах России 
+│   ├── electronic_pass_regime_data.xlsx -- данные о сроках введения и отмены электронных пропусков в регионах России 
 │   │   (собраны из региональных новостных сайтов  и  материалов компании "Гарант")
 │   └── city_dictionary.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
 │       мерждить файлы pass.csv и Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
