@@ -19,10 +19,10 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 │   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- Yandex self-isolation index (day-city)
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
-│   ├── pass1.csv -- regional restrictive measures (lockdowns) (week-region)
+│   ├── pass_data.csv -- regional restrictive measures (lockdowns) (week-region)
 │   ├── Пропускной режим и самоизоляция 2020.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
 │   │   (collected from regional news sites and Garant materials)
-│   └── city.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
+│   └── city_dictionary.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview graphs
     ├── pass.pdf 
     ├── pass1.pdf 
@@ -31,7 +31,7 @@ This paper assesses changes in the dynamics of applications for unemployment ben
     ├── yandex.pdf 
     └── yandex1.pdf 
 
-pass1.csv
+pass_data.csv
   ├── column level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
   │   depending on the epidemiological situation in the region. 
   │   The data was collected (https://github.com/go95/covid_labor) from an interactive map from the official resource for informing
@@ -64,10 +64,10 @@ pass1.csv
 │   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- индекс самоизоляции Яндекса (разбивка день-город) 
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
-│   ├── pass1.csv -- региональные ограничительные меры (разбивка неделя-регион)
+│   ├── pass_data.csv -- региональные ограничительные меры (разбивка неделя-регион)
 │   ├── Пропускной режим и самоизоляция 2020.xlsx -- данные о сроках введения и отмены электронных пропусков в регионах России 
 │   │   (собраны из региональных новостных сайтов  и  материалов компании "Гарант")
-│   └── city.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
+│   └── city_dictionary.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
 │       мерждить файлы pass.csv и Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
 └── figures -- panelview графики 
     ├── pass.pdf 
@@ -77,7 +77,7 @@ pass1.csv
     ├── yandex.pdf 
     └── yandex1.pdf 
 
-pass1.csv
+pass_data.csv
   ├── столбец level -- данные об ограничительных мерах, введенных или снятых главами субъектов РФ в зависимости от эпидемиологической ситуации в регионе. 
   │   Данные были собраны с интерактивной карты с официального интернет-ресурса для информирования населения по вопросам коронавируса.  
   │   Портал стопкоронавирус.рф. Ситуация с СOVID-19 в регионах. https://стопкоронавирус.рф/information/ (Дата обращения 13.12.2020 г.) 
