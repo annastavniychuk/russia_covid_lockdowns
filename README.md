@@ -1,15 +1,20 @@
 # Impact of the pandemic COVID-19 re-opening orders on the unemployment claims: Evidence from Russian regions
 
 The repository contains datasets on restrictive measures in Russia during the coronavirus pandemic. 
-Datasets collected by the authors for the article "The effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia".
 
-For citation:
-Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445
+Datasets collected by the authors for the article ["The effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia".](https://doi.org/10.3897/popecon.7.e90445)
+
+**Abstract**
+
+This paper assesses changes in the dynamics of applications for unemployment benefits in response to the abolition of regional restrictive measures during the first wave of COVID-19 spread in Russia. This assessment is interesting from the perspective of developing anti-crisis support measures for the population. The assessment is based on ﻿weekly-regional panel data using the ﻿staggered difference-in-differences method. ﻿After the lifting of restrictive measures, the number of new applications for unemployment benefits does not decrease significantly. The result remains robust when an alternative measure of the stringency of restrictions is used, such as an indicator for the validity period of digital passes instead of data on the stages of lifting restrictions. A comparison of official data on the effect of restrictive measures with the Yandex self-isolation index is provided.
+
+**For citation:**
+*Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445*
 
 
 ``` 
 ├── code
-│   └── panel_graphs.R -- script merge datasets from the data folder, pre-processes and makes graphics for the figures folder
+│   └── panel_graphs.R -- script merges datasets from the data folder, pre-processes and makes graphics for the figures folder
 ├── data
 │   ├── Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv -- Yandex self-isolation index (day-city)
 │   │   https://yandex.ru/company/researches/2020/podomam
@@ -41,10 +46,16 @@ pass1.csv
 
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
 
-Репозиторий содержит наборы данных об ограничительных мерах в России во время пандемии коронавируса. Наборы данных, собранные авторами для статьи «Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России».
+Репозиторий содержит наборы данных об ограничительных мерах в России во время пандемии коронавируса. 
 
-Для цитирования: 
-Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445
+Наборы данных, собранные авторами для статьи [«Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России».](https://doi.org/10.3897/popecon.7.e90445)
+
+**Аннотация**
+
+В работе дается оценка изменения динамики заявок на  пособие по  безработице в  ответ на отмену региональных ограничительных мер в первую волну распространения COVID-19 в России, что интересно с точки зрения разработки мер антикризисной поддержки населения. Оценка дается на панельных данных методом ступенчатой разности разностей в разрезе «регион-неделя». После снятия ограничительных мер число новых заявок на пособие по безработице значимо не снижается. Результат остается устойчивым при использовании альтернативной меры жесткости ограничений  — индикатора для периода действия электронных пропусков вместо данных об этапах снятия ограничений. Приводится сравнение официальных данных о действии ограничительных мер с индексом самоизоляции Яндекса.
+
+**Для цитирования:** 
+*Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445*
 
 ``` 
 ├── code
