@@ -15,6 +15,7 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 ``` 
 ├── code
 │   └── panel_graphs.R -- script merges datasets from the data folder, pre-processes and makes graphics for the figures folder
+│   
 ├── data
 │   ├── labor_data.xlsx -- ДОБАВИТЬ ОПИСАНИЕ ДАТАСЕТА
 │   │
@@ -25,6 +26,7 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 │   ├── electronic_pass_regime_data.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
 │   │   (collected from regional news sites and Garant materials)
 │   └── city_dictionary.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
+│   
 └── figures -- panelview graphs
     ├── pass.pdf 
     ├── pass1.pdf 
@@ -56,16 +58,17 @@ labor_data.xlsx ДОБАВИТЬ ОПИСАНИЕ ПЕРЕМЕННЫХ
 └── cv_gender
 
 pass_data.csv
-  ├── level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
-  │   depending on the epidemiological situation in the region. 
-  │   The data was collected (https://github.com/go95/covid_labor) from an interactive map from the official resource for informing
-  │   the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, the map
-  │   shows statistics on new cases of coronavirus detection in the regions. 
-  │   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
-  │   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
-  └── pass -- date of introduction and removal of the electronic pass regime, which we collected from regional news sites          
-      (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) and legal acts, 
-      summarized in the material prepared by the experts of the Garant company https://base.garant.ru/77398959/
+├── level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
+│   depending on the epidemiological situation in the region. 
+│   The data was collected (https://github.com/go95/covid_labor) from an interactive map from the official resource for informing
+│   the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, the map
+│   shows statistics on new cases of coronavirus detection in the regions. 
+│   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
+│   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
+│   
+└── pass -- date of introduction and removal of the electronic pass regime, which we collected from regional news sites                               
+    (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) and legal acts, 
+    summarized in the material prepared by the experts of the Garant company https://base.garant.ru/77398959/
   ```
 
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
@@ -84,6 +87,7 @@ pass_data.csv
 ``` 
 ├── code
 │   └── panel_graphs.R -- скрипт, который мёрджит наборы данных из папки data, предварительно их обрабатывает и строит графики для папки figures
+│   
 ├── data
 │   ├── labor_data.xlsx -- ДОБАВИТЬ ОПИСАНИЕ ДАТАСЕТА
 │   │
@@ -95,6 +99,7 @@ pass_data.csv
 │   │   (собраны из региональных новостных сайтов  и  материалов компании "Гарант")
 │   └── city_dictionary.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
 │       мерждить файлы pass.csv и Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
+│   
 └── figures -- panelview графики 
     ├── pass.pdf 
     ├── pass1.pdf 
@@ -131,8 +136,9 @@ pass_data.csv
 │   Портал стопкоронавирус.рф. Ситуация с СOVID-19 в регионах. https://стопкоронавирус.рф/information/ (Дата обращения 13.12.2020 г.) 
 │   На момент написания рукописи на карте обозначена статистика о новых случая выявления коронавируса в регионах. 
 │   Ознакомиться с видом карты, с которым мы работали в исследовании, можно с помощью веб-архива страницы по ссылке  
-│   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
-└── pass -- данные о введении и отмене режима электронных пропусков, собранные нами с региональных новостных сайтов         
-  (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) и нормативно-правовых актов, 
-  обобщенных экспертами компании "Гарант" в материале https://base.garant.ru/77398959/
+│   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/
+│   
+└── pass -- данные о введении и отмене режима электронных пропусков, собранные нами с региональных новостных сайтов                         
+    (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) и нормативно-правовых актов, 
+    обобщенных экспертами компании "Гарант" в материале https://base.garant.ru/77398959/
   ```
