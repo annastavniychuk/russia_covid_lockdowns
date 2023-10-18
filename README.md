@@ -36,28 +36,6 @@ This paper assesses changes in the dynamics of applications for unemployment ben
     ├── yandex.pdf 
     └── yandex1.pdf 
 
-labor_data.xlsx ДОБАВИТЬ ОПИСАНИЕ ПЕРЕМЕННЫХ
-├── week
-├── unemployed
-├── employed_in_industry_jan
-├── tests
-├── population
-├── men
-├── women
-├── deaths
-├── infections
-├── healed
-├── region
-├── oced
-├── level
-├── Rt
-├── cv_birthday_2000
-├── cv_birthday_1990
-├── cv_birthday_1980
-├── cv_birthday_1970
-├── cv_birthday_1960
-└── cv_gender
-
 pass_data.csv
 ├── level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
 │   depending on the epidemiological situation in the region. 
