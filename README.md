@@ -15,7 +15,11 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 ``` 
 ├── code
 │   └── panel_graphs.R -- script merges datasets from the data folder, pre-processes and makes graphics for the figures folder
+│   
 ├── data
+│   ├── labor_data.xlsx -- data aggregated at the regional level on citizens' applications for unemployment benefits during the 2020 pandemic,
+│   │   collected by Rostrud and the Center for Economic Development, as well as data on restrictive measures and COVID-19 incidence rates in the regions,
+│   │   collected by the authors of the article.
 │   ├── self_isolation_data.csv -- Yandex self-isolation index (day-city)
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
@@ -23,6 +27,7 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 │   ├── electronic_pass_regime_data.xlsx -- data on the timing of the introduction and cancellation of electronic passes in the regions of Russia
 │   │   (collected from regional news sites and Garant materials)
 │   └── city_dictionary.csv -- dictionary with city and region names to aggregate and merge pass.csv and Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
+│   
 └── figures -- panelview graphs
     ├── pass.pdf 
     ├── pass1.pdf 
@@ -32,16 +37,17 @@ This paper assesses changes in the dynamics of applications for unemployment ben
     └── yandex1.pdf 
 
 pass_data.csv
-  ├── column level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
-  │   depending on the epidemiological situation in the region. 
-  │   The data was collected (https://github.com/go95/covid_labor) from an interactive map from the official resource for informing
-  │   the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, the map
-  │   shows statistics on new cases of coronavirus detection in the regions. 
-  │   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
-  │   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
-  └── column pass -- date of introduction and removal of the electronic pass regime, which we collected from regional news sites          
-      (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) and legal acts, 
-      summarized in the material prepared by the experts of the Garant company https://base.garant.ru/77398959/
+├── level -- data on restrictive measures introduced or removed by the heads of subjects of the Russian Federation, 
+│   depending on the epidemiological situation in the region. 
+│   The data was collected (https://github.com/go95/covid_labor) from an interactive map from the official resource for informing
+│   the public about coronavirus. https://стопкоронавирус.рф/information/ (Accessed 12/13/2020) At the time of writing, the map
+│   shows statistics on new cases of coronavirus detection in the regions. 
+│   You can get acquainted with the type of map with which we worked in the study using the web archive of the page at the link
+│   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
+│   
+└── pass -- date of introduction and removal of the electronic pass regime, which we collected from regional news sites                               
+    (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) and legal acts, 
+    summarized in the material prepared by the experts of the Garant company https://base.garant.ru/77398959/
   ```
 
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
@@ -60,7 +66,10 @@ pass_data.csv
 ``` 
 ├── code
 │   └── panel_graphs.R -- скрипт, который мёрджит наборы данных из папки data, предварительно их обрабатывает и строит графики для папки figures
+│   
 ├── data
+│   ├── labor_data.xlsx -- агрегированные на уровне регионов данные о заявках граждан на пособие по безработице в период пандемии 2020 г., собранные Рострудом и ЦПУР,
+│   │   а также данные об ограничительных мерах и показателях заболеваемости COVID-19 в регионах, собранные автрами статьи.
 │   ├── self_isolation_data.csv -- индекс самоизоляции Яндекса (разбивка день-город) 
 │   │   https://yandex.ru/company/researches/2020/podomam
 │   │   https://yandex.ru/company/services_news/2020/2020-03-30
@@ -69,6 +78,7 @@ pass_data.csv
 │   │   (собраны из региональных новостных сайтов  и  материалов компании "Гарант")
 │   └── city_dictionary.csv -- словарь с названиями городов и регионов, чтобы агрегировать данные на уровень региона и 
 │       мерждить файлы pass.csv и Таблица_самоизоляция_по_дням_2022_11_30_02_37.csv
+│   
 └── figures -- panelview графики 
     ├── pass.pdf 
     ├── pass1.pdf 
@@ -76,15 +86,39 @@ pass_data.csv
     ├── stopcovid1.pdf 
     ├── yandex.pdf 
     └── yandex1.pdf 
-
-pass_data.csv
-  ├── столбец level -- данные об ограничительных мерах, введенных или снятых главами субъектов РФ в зависимости от эпидемиологической ситуации в регионе. 
-  │   Данные были собраны с интерактивной карты с официального интернет-ресурса для информирования населения по вопросам коронавируса.  
-  │   Портал стопкоронавирус.рф. Ситуация с СOVID-19 в регионах. https://стопкоронавирус.рф/information/ (Дата обращения 13.12.2020 г.) 
-  │   На момент написания рукописи на карте обозначена статистика о новых случая выявления коронавируса в регионах. 
-  │   Ознакомиться с видом карты, с которым мы работали в исследовании, можно с помощью веб-архива страницы по ссылке  
-  │   http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/ 
-  └── столбец pass -- данные о введении и отмене режима электронных пропусков, собранные нами с региональных новостных сайтов         
-      (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) и нормативно-правовых актов, 
-      обобщенных экспертами компании "Гарант" в материале https://base.garant.ru/77398959/
   ```
+
+В файле `labor_data.xlsx` представлены агрегированные на уровне регионов данные о заявках граждан на пособие по безработице в период пандемии 2020 г., собранные Рострудом и ЦПУР, а также данные об ограничительных мерах и показателях заболеваемости COVID-19 в регионах. Данные охватывают период с 06.04.2020 г. по 26.10.2020 г. и имеют еженедельную частотность.
+
+|Переменная|Описание|Источник|
+|---|---|---|
+|week|Неделя (указана дата начала недели)|   |
+|region|Название региона|   |
+|oced|Название сферы деятельности по справочнику ИАС ОБВ «Работа в России»|   |
+|unemployed|Количество заявок на пособие по безработице в регионе за неделю по сферам деятельности, указанным по справочнику ИАС ОБВ «Работа в России»|Обработано в рамках хакатона PandemicDataHack, организованного ИНИД и Рострудом. «Регистрируемая безработица в России: обезличенные микроданные о характеристиках граждан и полученных услугах за 2017-2021 гг.». Роструд; обработка: Инфраструктура научно-исследовательских данных, АНО «ЦПУР», 2021.|
+|cv_gender|Количество заявок на пособие по безработице от мужчин в регионе за неделю по сферам деятельности, указанным по справочнику ИАС ОБВ «Работа в России»|Аналогично|
+|cv_birthday_2000|Количество заявок на пособие по безработице в регионе за неделю по сферам деятельности от граждан, родившихся в 2000 году и позднее|Аналогично|
+|cv_birthday_1990|Количество заявок на пособие по безработице в регионе за неделю по сферам деятельности от граждан, родившихся в 1990 году и позднее|Аналогично|
+|cv_birthday_1980|Количество заявок на пособие по безработице в регионе за неделю по сферам деятельности от граждан, родившихся в 1980 году и позднее|Аналогично|
+|cv_birthday_1970|Количество заявок на пособие по безработице в регионе за неделю по сферам деятельности от граждан, родившихся в 1970 году и позднее|Аналогично|
+|cv_birthday_1960|Количество заявок на пособие по безработице в регионе за неделю по сферам деятельности от граждан, родившихся в 1960 году и позднее|Аналогично|
+|employed_in_industry_jan|Среднесписочная численность работников без внешних совместителей по полному кругу организаций (по отраслям) за январь 2020 года|[Росстат](https://fedstat.ru/indicator/57848)|
+|population|Численность населения региона на начало 2020 года|[Росстат](https://rosstat.gov.ru/bgd/regl/b20_111/Main.htm)|
+|men|Численность мужчин в регионе на начало 2020 года|[Росстат](https://rosstat.gov.ru/bgd/regl/b20_111/Main.htm)|
+|women|Численность женщин в регионе на начало 2020 года|[Росстат](https://rosstat.gov.ru/bgd/regl/b20_111/Main.htm)|
+|infections|Число выявленных случаев заболевания COVID-19 в разрезе регионов|[Данные собраны с помощью Yandex DataLens из источника стопкоронавирус.рф](https://datalens.yandex.ru/marketplace/f2eb8io5l5q4rp84feo1)|
+|deaths|Число смертей от COVID-19 в разрезе регионов|[Данные собраны с помощью Yandex DataLens из источника стопкоронавирус.рф](https://datalens.yandex.ru/marketplace/f2eb8io5l5q4rp84feo1)|
+|healed|Число выздоровлений от COVID-19 в разрезе регионов|[Данные собраны с помощью Yandex DataLens из источника стопкоронавирус.рф](https://datalens.yandex.ru/marketplace/f2eb8io5l5q4rp84feo1)|
+|tests|Еженедельное число проведенных тестов на COVID-19 в разрезе регионов|Данные по ТОП-15 регионам по числу проведенных тестов и ТОП-15 регионам по числу проведенных тестов на 100 000 человек населения публикуются в рамках пресс-релиза [Роспотребнадзора](https://www.rospotrebnadzor.ru/), таким образом, можно восстановить данные по 23 регионам России (некоторые из них пересекаются). Наблюдения по регионам, которые не постоянно находились в ТОП-15, были восстановлены посредством интерполяции|
+|Rt|Коэффициент распространения инфекции - это показатель, определяющий среднее количество людей, которых инфицирует один больной до его изоляции. Данный коэффициент рассчитывается на основе данных по приросту новых случаев за последние 8 суток и используется для принятия решений о переходе к первому, второму или третьему этапу снятия ограничений. Коэффициент рассчитывался на оперативных данных числа выявленных случаев заболевания по формуле: $R_t=\frac{X_8+X_7+X_6+X_5}{X_1+X_2+X_3+X_4}$, где $X_i$ - количество зарегистрированных больных в регионе за $i$-е сутки|Рассчитано авторами на основе оперативных данных стопкоронавирус.рф.|
+|level|Этап снятия ограничительных мер в регионе в зависимости от эпидемиологической ситуации. Использовалась градация жесткости мер: 0 – Данные доступны с 8 июня 2020 г.|Данные собраны с интерактивной карты с помощью веб архива страницы https://стопкоронавирус.рф/information/|
+
+В файле `pass_data.csv`
+|Переменная|Описание|Источник|
+|---|---|---|
+|level|Данные об ограничительных мерах, введенных или снятых главами субъектов РФ в зависимости от эпидемиологической ситуации в регионе|Данные были собраны с интерактивной карты с официального интернет-ресурса для информирования населения по вопросам коронавируса. Портал стопкоронавирус.рф. Ситуация с СOVID-19 в регионах. https://стопкоронавирус.рф/information/ (Дата обращения 13.12.2020 г.) На момент написания рукописи на карте обозначена статистика о новых случая выявления коронавируса в регионах. Ознакомиться с видом карты, с которым мы работали в исследовании, можно с помощью веб-архива страницы по ссылке http://web.archive.org/web/20200615124941/https://xn--80aesfpebagmfblc0a.xn--p1ai/information/|
+|pass|Данные о введении и отмене режима электронных пропусков|Данные были собраны нами с региональных новостных сайтов (https://docs.google.com/spreadsheets/d/1TKZL2P0oDZ6VoyRGPIW3Tstkfi3vsopov9kzdSCuQp0/edit?usp=sharing) и нормативно-правовых актов, а также с помощью материалов, подготовленных экспертами компании "Гарант" https://base.garant.ru/77398959/|
+
+
+
+
