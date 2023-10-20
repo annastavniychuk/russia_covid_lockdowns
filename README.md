@@ -11,6 +11,8 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 **For citation:**
 *Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445*
 
+---
+
 # Влияние снятия региональных ограничительных антиковидных мер на динамику заявок на пособие по безработице в России 
 
 Репозиторий содержит наборы данных об ограничительных мерах в России во время пандемии коронавируса. 
@@ -24,9 +26,11 @@ This paper assesses changes in the dynamics of applications for unemployment ben
 **Для цитирования:** 
 *Suchkova OV, Stavniychuk AY, Kalashnov GY, Osavolyuk A (2023) The ﻿effect of the removal of regional anti-COVID restrictive measures on the dynamics of applications for unemployment benefits in Russia. Population and Economics 7(2): 1-22. https://doi.org/10.3897/popecon.7.e90445*
 
+---
+
 Мы максимально приветствуем использование собранной нами базы данных в любых исследованиях, однако просим указывать источник. Ниже для удобства приведено описание переменных.
 
-В файле `labor_data.xlsx` представлены агрегированные на уровне регионов данные о заявках граждан на пособие по безработице в период пандемии 2020 г., собранные Рострудом и ЦПУР, а также данные об ограничительных мерах и показателях заболеваемости COVID-19 в регионах. Данные по безработным охватывают период с 06.04.2020 г. по 26.10.2020 г. и имеют еженедельную частотность.
+В файле `labor_data.xlsx` представлены агрегированные на уровне регионов данные о заявках граждан на пособие по безработице в период пандемии 2020 г., собранные Рострудом и ЦПУР, а также данные об ограничительных мерах, показателях заболеваемости COVID-19 и демографии в регионах, собранные авторами. Данные по безработным охватывают период с 06.04.2020 г. по 26.10.2020 г. и имеют еженедельную частотность.
 
 |Переменная|Описание|Периодичность|Источник|
 |---|---|---|---|
